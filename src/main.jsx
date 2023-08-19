@@ -9,6 +9,8 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+
+
     children: [
       {
         path: "",
@@ -19,6 +21,7 @@ const router = createBrowserRouter([
         element: <Blog></Blog>,
       },
     ],
+
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
