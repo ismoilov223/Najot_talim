@@ -1,14 +1,16 @@
 import { useState } from "react";
 import "./App.css";
-import CurseHeader from "./pages/Curse/Components/CurseHeader/CurseHeader";
-import Home from "./pages/Home/Home";
 
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <CurseHeader />
+      <Navbar></Navbar>
+      <Outlet />
+      <Footer></Footer>
+
     </div>
   );
 }
