@@ -33,5 +33,11 @@ export const HeaderStyle = styled.div`
       font-weight: 500;
       line-height: 2.2rem;
     }
+    &__form {
+      display: flex;
+      gap: 0.8rem;
+      border: 0.1rem solid;
+      align-items: center;
+    }
   }
 `;
