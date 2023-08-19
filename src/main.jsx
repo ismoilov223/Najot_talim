@@ -7,7 +7,7 @@ import Home from "./pages/Home/Home";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <App></App>,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
