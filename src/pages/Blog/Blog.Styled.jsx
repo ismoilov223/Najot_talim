@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const BlogStyled = styled.div`
   .blog {
     &__header {
+      padding-top: 32px;
+      padding-bottom: 32px;
       .bredcrumb {
         display: flex;
         align-items: center;
