@@ -4,9 +4,9 @@ import { HomeStyled } from './Home.Styled';
 const Home = () => {
 	return (
 		<HomeStyled className='home'>
-			<div className="home__header">
-                
-            </div>
+			<div className='home__header'>
+				<h1>Home</h1>
+			</div>
 		</HomeStyled>
 	);
 };
