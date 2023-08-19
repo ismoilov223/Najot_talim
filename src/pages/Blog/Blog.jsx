@@ -1,12 +1,14 @@
 import React from "react";
 import { BlogStyled } from "./Blog.Styled";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
-    <BlogStyled className="home">
+    <BlogStyled className="blog">
       <div className="blog__header">
         <div className="bredcrumb">
-            <p className="bredcrumb__"></p>
+            <Link to={'/'} className="bredcrumb__link">Bosh sahifa</Link>
+            <p className="bredcrumb__name">Bloglar</p>
         </div>
       </div>
     </BlogStyled>
