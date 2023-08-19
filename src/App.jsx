@@ -1,18 +1,19 @@
-import { useState } from "react";
-import "./App.css";
 
-import { Outlet } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { useState } from 'react';
+import './App.css';
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+
 function App() {
-  return (
-    <div className="App">
-      <Navbar></Navbar>
-      <Outlet />
-      <Footer></Footer>
+	return (
+		<div className='App'>
+			<Navbar />
+			<Outlet />
+			<Footer />
+		</div>
+	);
 
-    </div>
-  );
 }
 
 export default App;

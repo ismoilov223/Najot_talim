@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavbarStyled } from './Navbar.Styled';
 import { Link } from 'react-router-dom';
+import { logo_light } from '../../images';
 
 const Navbar = () => {
 	return (
 		<NavbarStyled className='nav'>
 			<div className='container'>
 				<div className='nav__logo'>
-					<img src='' alt='' className='nav__logo-img' />
+					<img src={logo_light} alt='' className='nav__logo-img' />
 				</div>
 				<div className='nav__category'>
 					<Link className='nav__category-item'>
