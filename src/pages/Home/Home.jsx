@@ -9,6 +9,7 @@ const Home = () => {
 		<HomeStyled className='home'>
 			<div className='home__header'>
 				<h1>Home</h1>
+				<h2>navbar</h2>
 			</div>
 		</HomeStyled>
 	);
