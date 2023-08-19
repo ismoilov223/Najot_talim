@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { MenuStyled } from "./Menu.Styled";
 
-const Menu = () => {
+const Menu = ({Text}) => {
   return (
-    <div>Menu</div>
-  )
-}
+    <MenuStyled>
+        <div className="item">
+          <p className="item__text">{Text}</p>
+        </div>
+    </MenuStyled>
+  );
+};
 
-export default Menu
+export default Menu;

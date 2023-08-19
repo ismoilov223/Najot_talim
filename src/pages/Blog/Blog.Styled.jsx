@@ -3,11 +3,15 @@ import styled from "styled-components";
 export const BlogStyled = styled.div`
   .blog {
     &__header {
-      padding-top: 32px;
-      padding-bottom: 32px;
+      .menu {
+        display: flex;
+        gap: 1.6rem;
+        flex-wrap: wrap;
+      }
       .bredcrumb {
         display: flex;
         align-items: center;
+        padding: 3.2rem 0;
         &__link {
           color: #c4c4c4;
           font-family: Lato;
