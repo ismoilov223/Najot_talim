@@ -5,6 +5,7 @@ const Home = () => {
 
 
 
+
 	return (
 		<HomeStyled className='home'>
 			<div className='home__header'>
