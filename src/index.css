@@ -22,4 +22,11 @@ body {
 }
 main {
 	flex-grow: 1;
+	height: 100%;
+}
+.container {
+	max-width: 144rem;
+	width: 100%;
+	padding: 0 4rem;
+	margin: 0 auto;
 }
