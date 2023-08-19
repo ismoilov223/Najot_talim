@@ -6,7 +6,7 @@ const CurseHeader = () => {
     <HeaderStyle className="header">
       <div className="header__h3">
         <h3 className="header__boshs">Bosh sahifa</h3>
-        <h3>Kurslar</h3>
+        <h3 className="header__kurs">Kurslar</h3>
       </div>
     </HeaderStyle>
   );

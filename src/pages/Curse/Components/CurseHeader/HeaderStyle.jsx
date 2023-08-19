@@ -17,5 +17,21 @@ export const HeaderStyle = styled.div`
       background-repeat: no-repeat;
       background-size: contain;
     }
+    &__boshs {
+      color: #c4c4c4;
+      font-family: Lato;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2.2rem;
+    }
+    &__kurs {
+      color: #ba8d5b;
+      font-family: Lato;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2.2rem;
+    }
   }
 `;
