@@ -5,11 +5,11 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
+import CursePage from "./pages/Curse/CursePage";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-
 
     children: [
       {
@@ -20,8 +20,11 @@ const router = createBrowserRouter([
         path: "/blog",
         element: <Blog></Blog>,
       },
+      {
+        path: "/course",
+        element: <CursePage></CursePage>,
+      },
     ],
-
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
