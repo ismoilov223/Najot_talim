@@ -2,9 +2,15 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.div`
   .header {
+    &__bg {
+      background: #f7f7f5;
+      padding-bottom: 24px;
+    }
+
     &__h3 {
       display: flex;
       align-items: center;
+      padding-top: 32px;
     }
     &__boshs::after {
       display: inline-block;
@@ -33,11 +39,30 @@ export const HeaderStyle = styled.div`
       font-weight: 500;
       line-height: 2.2rem;
     }
+    &__serach {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 32px;
+    }
     &__form {
       display: flex;
-      gap: 0.8rem;
-      border: 0.1rem solid;
+      justify-content: space-between;
       align-items: center;
+      width: 319px;
+      border-radius: 100px;
+      background: white;
+    }
+    &__input {
+      border: none;
+      padding: 14px;
+
+      margin-left: 15px;
+    }
+    &__lupa {
+      margin-right: 15px;
+    }
+    &__button {
+      margin-top: 24px;
     }
   }
 `;
