@@ -36,7 +36,7 @@ const Blog = () => {
           <div className="menu">
             {Menudata.map((item) => (
               <Menu Text={item.text}></Menu>
-            ))}
+            ))}]]
           </div>
         </div>
       </div>
