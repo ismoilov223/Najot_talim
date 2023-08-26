@@ -40,5 +40,10 @@ export const BlogStyled = styled.div`
         }
       }
     }
+    &__main{
+      .blog{
+        padding-top: 25px;
+      }
+    }
   }
 `;
