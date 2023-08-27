@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const BlogMainStyled = styled.div`
   display: flex;
   gap: 90px;
+  row-gap: 20px;
   flex-wrap: wrap;
   .blog {
     width: 342px;
