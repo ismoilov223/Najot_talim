@@ -5,26 +5,7 @@ import Menu from "./component/Menu";
 import BlogMain from "./component/BlogMain";
 import { BlogMainStyled } from "./BlogMain.Styled";
 import { BlogImg, Iconeye } from "../../images";
-const Menudata = [
-  {
-    text: "Barchasi",
-  },
-  {
-    text: "Bitiruv marosimi",
-  },
-  {
-    text: "Master-klass",
-  },
-  {
-    text: "Musobaqa",
-  },
-  {
-    text: "Dasturlash",
-  },
-  {
-    text: "Najot Quiz",
-  },
-];
+
 const Blogdata = [
   {
     blogtitle: "Musobaqa",
@@ -84,6 +65,8 @@ const Blogdata = [
 ];
 const Blog = () => {
   const [blogdata, setblogdata] = useState(Blogdata);
+  const [text, settext] = useState("Barchasi");
+
   return (
     <BlogStyled className="blog">
       <div className="container">
@@ -95,30 +78,41 @@ const Blog = () => {
             <p className="bredcrumb__name">Bloglar</p>
           </div>
           <div className="menu">
-            {Menudata.map((item) => (
-              <Menu blogdata={blogdata} setblogdata={setblogdata} key={item.text} Text={item.text}></Menu>
-            ))}
+            {
+              <Menu
+                text={text}
+                settext={settext}
+                blogdata={blogdata}
+                setblogdata={setblogdata}
+              ></Menu>
+            }
           </div>
         </div>
         <div className="blog__main">
           <BlogMainStyled>
-            {Blogdata.map((item) => (
-              <div className="blog" key={item.blogsee}>
-                <div className="blog_title_box">
-                  <p className="blog_title_text">{item.blogtitle}</p>
-                </div>
-                <img src={BlogImg} className="blog_img" alt="" />
-                <div className="blog_content">
-                  <div className="blog_content_title">
-                    <p className="blog_cotent_date">{item.blogdate}</p>
-                    <img src={Iconeye} alt="" />
-                    <p className="blog_cotent_see">{item.blogsee}</p>
+            {blogdata
+              .filter(
+                text != "Barchasi"
+                  ? (blog) => blog.blogtitle == text
+                  : (blog) => blog.blogtitle != text
+              )
+              .map((item) => (
+                <div className="blog" key={item.blogsee}>
+                  <div className="blog_title_box">
+                    <p className="blog_title_text">{item.blogtitle}</p>
                   </div>
-                  <p className="blog_content_text">{item.blogtext}</p>
-                  <p className="blog_content_doing">{item.blogdoing}</p>
+                  <img src={BlogImg} className="blog_img" alt="" />
+                  <div className="blog_content">
+                    <div className="blog_content_title">
+                      <p className="blog_cotent_date">{item.blogdate}</p>
+                      <img src={Iconeye} alt="" />
+                      <p className="blog_cotent_see">{item.blogsee}</p>
+                    </div>
+                    <p className="blog_content_text">{item.blogtext}</p>
+                    <p className="blog_content_doing">{item.blogdoing}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </BlogMainStyled>
         </div>
       </div>
